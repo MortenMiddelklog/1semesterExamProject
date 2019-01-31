@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about-us {
+	background-color: #f2f2f2;
+	line-height: 35px;
+	letter-spacing: 0.5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+
+.about-us h2{
+	width: 70%;
+	align-self: center;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.cta-about {
+	display: block;
+	margin: 50px auto;
+}
+
+.cta-about a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 200px;
+	background-color:#5CA790;
+  	color: #F2F2F2;
+  	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: .5s ease;
+	
+}
+
+.cta-about a:hover {
+	background-color: #9ECABC;
+}
+
+
+/**/
+.reviews {
+	background-color:#F2F2F2;
+	text-align: center;
+	overflow: hidden;
+	padding: 40px 0;
+	font-family: 'Maven Pro', sans-serif;
+	letter-spacing: 0.5px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.reviews i{
+	color: #4CA0CB;
+}
+
+.reviews div {
+	color:#4CA0CB;
+	padding: 30px;
+}
+
+.reviews p {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	line-height: 30px;
+	font-style: italic;
+}
+
+.reviews span {
+	display: block;
+	padding: 45px 0;
+	font-weight: 700;
+}
+
+
+
+.whitepiece{
+	background-color: white;
+	height: 40px;
+	width: 100%;
+	display: block;
+}
+
+
+@media only screen and (min-width: 650px) {
+	.ditnavn input[type=text] {
+		width: 100%;
+	}
+	
+	.felter {
+		width: 80%;
+		margin: auto;
+	}
+	
+	.emailmobil{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.emailmobil input[type=text] {
+		display: flex;
+		flex-basis: 49%;
+	}
+	
+	.mobileline{
+		display: none;
+	}
+	
+	.tekst, .felter{
+		max-width: 600px;
+	}
+	
+	.h2 h2{
+		font-size: 2em;
+	}
+	
+	.send{
+		margin: 20px 0;
+	}
+	
+	.os {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.reviews{
+		height: 400px;
+		text-align: center;
+	}
+	
+}
+	
+	
+

@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* ring til os sticky nav */
+
+.cta-sticky {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.flying-cta{
+	display: none;
+}
+
+/*hele ring op boksen*/
+
+.phonebox{
+	height: 170px;
+	width: 220px;
+	background-color:rgba(232,232,232,0.90);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*overskrift ring op boks*/
+
+.ringeop{
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'News Cycle', sans-serif;
+	letter-spacing: 2.3px;
+	color: #2E5B84;
+	margin-top: 20px;
+}
+
+
+/*indtast nummer og send*/
+
+.inputtelefon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	padding: 10px;
+}
+
+.inputtelefon input{
+	height: 40px;
+	width: 130px;
+	outline: none;
+	margin: 2px;
+	border: 0;
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'News Cycle', sans-serif;
+	letter-spacing: 1px;
+	color: #1E4A62;
+	font-weight: 200;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.inputtelefon button{
+	height: 40px;
+	width: 40px;
+	outline: none;
+	margin: 2px;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color:white;
+	cursor: pointer;
+	border: none;
+	transition: .5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.inputtelefon button img {
+	display: block;
+	width: 60%;
+}
+
+.phonebox p{
+	text-align: center;
+	width: 80%;
+	font-family: 'News Cycle', sans-serif;
+	letter-spacing: 2px;
+	color:#404040;
+	margin-bottom: 20px;
+	font-size:12px;
+	line-height: 15px;
+}
+
+
+
+
+
+/* main sticky nav */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.sticky + main {
+	padding-top: 55px;
+}
+
+.above-nav {
+	background-color: white;
+	display: none;
+}
+
+.navbar {
+	display: block;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	padding: 0 30px;
+}
+
+.menu .soMedia {
+	display: flex;
+	justify-content: center;
+}
+
+.nav {
+	list-style-type: none;
+	display: block;
+}
+
+.nav a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #373B39;
+	padding: 15px 0;
+	font-family: "Maven Pro", "sans-serif";
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.nav a:hover {
+	color: #c88b2e;
+}
+
+.nav p {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.active p {
+	border-bottom: 2px solid #c88b2e;
+	width: 30%;
+}
+
+.laptop {
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+
+.navhead {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 55px;
+}
+
+.hamburger {
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cross {
+	display: none;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 3.5em;
+	cursor: pointer;
+	transform: translate(0%, 25%);
+  	-ms-transform: translate(0%, 25%);
+}
+
+@media only screen and (min-width: 900px) {
+	
+	
+	.flying-cta{
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+	
+	.laptop {
+		display: flex;
+		height: 55px;
+		align-items: center;
+	}
+	
+	.center {
+		display: flex;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	
+	.nav {
+		display: flex;
+		flex-basis: 95%;
+		justify-content: space-around;
+		max-width: 1100px;
+		margin-top: 0;
+	}
+	
+	.nav li {
+		display: flex;
+		flex-basis: 100%;
+		align-items: center;
+	}
+	
+	.nav a {
+		font-size: 1em;
+		padding: 27px auto;
+	}
+	
+	.active p {
+		width: 80%;
+	}
+}
+
+

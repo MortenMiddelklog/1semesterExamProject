@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.case-header img {
+	display: block;
+	width: 100%;
+}
+
+
+.breadcrumb-box {
+	background-color: #373b39;
+	padding: 20px 0;
+}
+
+.bc-content, .case-content {
+	width: 80%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+ul.breadcrumb {
+	list-style-type: none;
+}
+
+.breadcrumb li {
+	display: inline;
+	color: #f2f2f2;
+	font-family: "News Cycle", "sans-serif";
+}
+
+.breadcrumb a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.case-title h2 {
+	color: #4ca0cb;
+	font-size: 2em;
+	padding-top: 30px;
+	font-family: "News Cycle", "sans-serif";
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+
+
+/**/
+
+.case-content {
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.case-text-title, .facts-title {
+	font-size: 2.5em;
+	font-family: "News Cycle", "sans-serif";
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.case-text, .case-facts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.case-text p, .case-facts p {
+	font-size: 14px;
+	line-height: 42px;
+}
+
+
+/* Main part of all portfolio cases */
+.cases-main {
+	background-color: lightgray;
+}
+
+.imagecontainer{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagecontainer img{
+	width: 95%;
+	padding: 100px;
+}
+
+.driveimg{
+	width: 150%;
+	height: 150%;
+}
+
+.promiselogo{
+	width: 70%;
+	min-width: 200px;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.frames{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.frames1{
+	width: 65%;
+	padding: 0 3%;
+}
+
+.frames2{
+	width: 24%;
+	padding: 0 3%
+}
+
+
+.colorcontainer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 2%;
+	
+}
+
+.colorcontainer img{
+	width: 15%;
+	max-width: 100px;
+	margin: 3%;
+}
+
+.naturgrid{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	grid-gap: 10px;
+	padding: 10px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.naturgrid img{
+	display: block;
+	width: 100%;
+}
+
+@media only screen and (min-width: 850px) {
+	.case-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.case-text {
+		padding-right: 5%;
+	}
+	.case-text, .case-facts {
+		height: 300px;
+	}
+	
+	.promiselogo{
+		padding: 8% 0;
+	}
+	
+	.imagecontainer img{
+	width: 50%;
+	}
+}
+
+

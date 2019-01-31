@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Maven Pro", "sans-serif";
+	font-style: normal;
+	font-feature-settings: "liga" 0;
+}
+
+.overskrifter h2{
+	color: #373B39;
+	font-size:25px;
+	letter-spacing: 3px
+}
+
+
+.overskrifter h3{
+	font-family: 'News Cycle', sans-serif;
+	letter-spacing: 2px;
+	font-size: 22px;
+	color: #23556F;
+}
+
+.overskrifter{
+	height: 100px;
+	width: 100%;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overskrifter a{
+	text-decoration: none;
+	width: 100%;
+}
+
+
+.portfolio .overskrifter{
+	height: 200px;
+}
+
+.headlines{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.headlines h2, .headlines h3 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.headlines h2{
+	color: #c88b2e;
+	padding-top: 50px;
+}
+
+.headlines h3{
+	color: #4A4A4A;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+/* undersider */
+
+.subpagetitle{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	text-align: center;
+	
+}
+
+.subpageh1{
+	color:#c88b2e;
+	font-weight: 600;
+	font-size: 2em;
+	padding: 30px 0;
+	letter-spacing: 0.5px;
+	width: 80%;
+	max-width: 1100px;
+	line-height: 50px;
+}
+
+.subpageh2{
+	color:#363636;
+	font-weight: 200;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	line-height: 25px;
+	width: 80%;
+	max-width: 1100px;
+}
+
+
+/* mobileline */
+
+.mobileline{
+	margin: 40px auto;
+	width: 80%;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(160,160,160,0.8), rgba(0,0,0,0));	
+}
+
+/*Frontpage above nav header*/
+
+.headercontainer{ 
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.headercontainer header {
+	flex-grow: 1;
+	background-image:url(../images/headerforside3.png);
+	background-size:cover;
+	background-position:top;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-end;
+	align-items: center;
+	height: 92vh;
+	
+}
+
+.header .fa{
+	color: white;
+}
+
+
+.logo-text img {
+	display: block;
+	width: 60vh;
+	padding: 5vh;
+}
+
+
+/* Getting the arrow to bounce on the landing page */
+.arrow{
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
+
+/* Logo - also in media query! */
+.logo img {
+	display: block;
+	width: 100px;
+}
+
+
+
+/* All pages h1 styling */
+.title {
+	background-color: #f2f2f2;
+	padding: 20px 0;
+}
+
+.title h1 {
+	font-family: "Maven Pro", "sans-serif";
+	color: #C88B2E;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	margin: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+/*Social media icons*/
+.soMedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.soMedia img {
+	display: inline-block;
+	max-height: 40px;
+	padding: 5px;
+}
+
+
+
+/* Styling for call to action section*/
+.our-work {
+	text-align: center;
+	padding: 5%;
+	letter-spacing: 2px;
+}
+
+.our-work-title {
+	font-size: 1.8em;
+	font-family: "News Cycle", "sans-serif";
+	text-transform: uppercase;
+}
+
+.our-work p {
+	font-size: 1.3em;
+	font-family: "News Cycle", "sans-serif";
+}
+
+.cta-our-work {
+	margin-top: 30px;
+}
+
+.cta-our-work a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #4ca0cb;
+	width: 200px;
+	padding: 10px 0;
+	margin: auto;
+	font-size: 1.3em;
+	border: 2px solid #4ca0cb;
+	border-radius: 5px;
+	font-family: "News Cycle", "sans-serif";
+	transition: .5s ease;
+}
+
+.cta-our-work a:hover {
+	background-color: #4ca0cb;
+	color: #f2f2f2;
+}
+
+
+
+
+/*Footer*/
+.footer {
+	background-color: #f2f2f2;
+	text-align: center;
+	width: 100%;
+}
+
+.contact {
+	font-size: 13px;
+	line-height: 27px;
+	letter-spacing: 0.5px;
+}
+
+.ficon img {
+	display: block;
+	max-width: 30px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.ficon {
+	display: block;
+	width: 100%;
+	padding: 18px;
+}
+
+
+
+.email a , .address, .email, .phone{
+	text-decoration: none;
+	color: #373B39;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 10px
+}
+
+
+.footer .soMedia {
+	background-color: #5CA790;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.footer h2{
+	color:#25353B;
+	width: 80%;
+	margin: auto;
+	font-size: 23px;
+	padding: 40px;
+}
+
+
+@media only screen and (min-width: 450px) {
+	/*Titles on all pages!*/
+	.title h1 {
+		font-size: 1.8em;
+	}
+	/*logo in the landingpage*/
+	.logo-text img {
+		width: 35vh;
+		padding: 2vh;
+	}
+}
+
+
+@media only screen and (min-width: 650px) {
+	/*Footer skift*/
+	.contact {
+		display: flex;
+		justify-content: space-around;
+		width: 80%;
+		max-width: 1100px;
+		margin: auto;
+	}
+	/*logo in the landingpage*/
+	.logo-text img {
+		max-width: 400px;
+	}
+	
+	.subpagetitle{
+		height: 400px;
+	}
+}
+
+
+
+@media only screen and (min-width: 800px) {
+	.title h1 {
+		font-size: 2.2em;
+	}
+	
+	.footer {
+		background-color: #f2f2f2;
+		text-align: center;
+		width: 100%;
+	}
+}
+	
